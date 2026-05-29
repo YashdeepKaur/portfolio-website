@@ -1,0 +1,178 @@
+* {
+    margin: 0
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.box {
+    width: 22px;
+    height: 22px;
+    background-color: blue;
+}
+
+.name {
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+.role {
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+
+.navi ul { display: flex; gap: 25px; list-style: none; }
+.navi ul li a { text-decoration: none; color: black; transition: 0.3s; }
+.navi ul li a:hover, .active { color: blue !important; }
+
+
+.section {
+    display: flex;
+    height: calc(100vh - 100px);
+    background: linear-gradient(to right, pink 40%, #FFFFFF 40%);
+}
+
+.left {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.profile-card {
+    background: #F3F3F3;
+    padding: 50px 40px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 380px;
+}
+
+.profile-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 25px;
+}
+
+.blue-divider {
+    width: 60px;
+    height: 2px;
+    background: blue;
+    margin: 20px auto;
+}
+
+.card-role {
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+}
+
+.social-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links img {
+    width: 20px;
+}
+
+
+.right {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+}
+
+.intro-text h1 {
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+.intro-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.cta-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+
+.btn-blue {
+    background: blue;
+    color: white;
+    border: 1px solid blue;
+}
+
+.btn-outline {
+    border: 1px solid black;
+    color: black;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.bio {
+    max-width: 450px;
+    line-height: 1.8;
+    color: #333;
+}
+
+
+footer {
+    padding: 50px;
+    border-top: 1px solid #ddd;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-right {
+    display: flex;
+    gap: 60px;
+}
+
+.footer-item h4 {
+    margin-bottom: 10px;
+}
+
+.footer-icons img {
+    width: 18px;
+    margin-right: 10px;
+}

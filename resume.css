@@ -1,0 +1,169 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo { display: flex; align-items: center; gap: 12px; }
+.box { width: 22px; height: 22px; background-color: blue; }
+.name { font-size: 1.6rem; font-weight: 900; }
+.slash { margin: 0 5px; }
+.role { font-weight: 300; font-size: 1.1rem; }
+
+.navi ul { display: flex; gap: 25px; list-style: none; }
+.navi ul li a { text-decoration: none; color: black; transition: 0.3s; }
+.navi ul li a:hover, .active { color: blue !important; }
+
+
+.resume-main {
+    background-color: pink; 
+    padding: 80px 0;
+    min-height: 100vh;
+}
+
+.resume-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.page-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.page-title h1 { font-size: 2.5rem; font-weight: 900; }
+.blue-box { width: 25px; height: 25px; background-color: blue; }
+
+
+.resume-card {
+    background: white;
+    padding: 60px 40px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-left {
+    width: 30%;
+}
+
+.section-left h2 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.section-right {
+    width: 65%;
+}
+
+
+.resume-item {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.resume-item:last-child { margin-bottom: 0; }
+
+.date {
+    color: blue;
+    font-weight: 700;
+    min-width: 110px;
+}
+
+.item-details h3 { font-size: 1.2rem; margin-bottom: 5px; }
+.company { font-weight: 400; margin-bottom: 10px; font-style: italic; }
+.description { line-height: 1.6; color: #444; font-weight: 300; }
+
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.blue-square {
+    width: 12px;
+    height: 12px;
+    background-color: blue;
+    flex-shrink: 0;
+}
+
+
+.button-row {
+    display: flex;
+    justify-content: flex-start; 
+    max-width: 1000px;          
+    margin: 0 auto 20px auto;    
+    padding: 0 20px;             
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: blue;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+
+
+
+
+footer {
+    padding: 50px;
+    border-top: 1px solid #ddd;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-right {
+    display: flex;
+    gap: 60px;
+}
+
+.footer-item h4 {
+    margin-bottom: 10px;
+}
+
+.footer-icons img {
+    width: 18px;
+    margin-right: 10px;
+}
